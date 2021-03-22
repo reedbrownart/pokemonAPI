@@ -1,0 +1,27 @@
+body {
+    background-color: turquoise;
+    padding: 10px;
+}
+
+div {
+    background-color: white;
+    border: 1px black solid;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+    padding: 10px;
+}
+
+form, section, button {
+    background-color: grey;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.container {
+    border: 1px black solid;
+}
+
+.results {
+    border: 1px black solid;
+}
