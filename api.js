@@ -1,6 +1,8 @@
 //creating variable to store the API url
 const speciesURL = 'https://pokeapi.co/api/v2/pokemon-species/';
 
+console.log('i changed something');
+
 //For personal testing
 const working = " is working!!!!!111";
 
