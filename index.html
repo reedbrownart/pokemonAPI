@@ -8,14 +8,23 @@
     <link href="api.css" rel="stylesheet">
 </head>
 <body>
-    <div class = "container">
-        <form>
+    <div class = "questions">
+        <form class = "firstQuestion">
+            <p>
+                <label>Which pokemon would you like to summon? </label>
+                <input type="text" class="pokemonSelection" required>
+            </p>
+            <p>
+                <label>Which pokemon would you like to fight against?</label>
+                <input type="text" class="enemySelection" required>
+            </p>
             <button class = "submit">Submit</button>
         </form>
-        <section class = "results">
-
-        </section>
     </div>
+
+    <section class = "results">
+
+    </section>
 
     <script src="api.js"></script>
 </body>
