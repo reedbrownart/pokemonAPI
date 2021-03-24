@@ -136,6 +136,15 @@ function runBattle() {
     let deathDescription = document.createElement('p');
     deathDescription.textContent = 'neither pokemon has died!';
 
+    //All of this was originally written anticipating actual calculation of pokemon attacks
+    //I encountered a number of issues with this, some might be solvable but some are limitations of the API
+    //1) I couldn't find a way to check if a randomMove was even usable by a specific pokemon
+    //2) I would then need to find a move's damage, add type modifiers and subtract it from the enemy health
+    //3) This is not even beginning to implement status effects, critical hits, accuracy, etc.
+    
+    //Ultimately I just used a while loop that slowly subtracts from an arbitrary health
+    //Essentially every random Move that gets pulled from the API does 10 damage (even though that's not how it would work in the real game)
+
     while (!playerIsDead && !enemyIsDead) {
             let playerMoveResults = document.createElement('p');
             let randomNum = Math.floor(Math.random() * Math.floor(325));
@@ -181,16 +190,4 @@ function runBattle() {
     battleDescription.appendChild(deathDescription);
     battle.appendChild(battleDescription);
     results.appendChild(battle);
-}
-
-function isSuperEffective(move, pokemon) {
-    if (pokemon.name === 'zubat') {
-        return true;
-    }
-    
-    if (move.name === 'tackle') {
-        return true;
-    } else {
-        return false;
-    }
 }

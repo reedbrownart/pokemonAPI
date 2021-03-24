@@ -1,39 +1,59 @@
 body {
     background-color: turquoise;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     flex-direction: row;
     justify-items: space-evenly;
+    justify-content: space-evenly;
 }
 
 div {
-    background-color: white;
-    border: 1px black solid;
+    background-color: grey;
+    border: 3px black solid;
+    border-radius: 5px;
     display: flex;
     justify-content: space-evenly;
     justify-items: space-evenly;
     padding: 10px;
 }
 
-form, section, button {
-    background-color: grey;
-    border: 1px black solid;
-    padding: 10px;
+form {
+    
+}
+
+button {
+    border: 0;
+    background-color: transparent;
 }
 
 p {
-    background-color: grey;
-    border: 1px black solid;
+    border: 3px black solid;
+    border-radius: 5px;
     padding: 10px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    background-color: white;
+}
+
+input {
+    border: 3px black solid;
+    border-radius: 5px;
 }
 
 .container {
-    border: 1px black solid;
+    border: 3px black solid;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
 }
 
 .results {
-    border: 1px black solid;
     text-align: center;
+    width: 600px;
+}
+
+.questions {
+    height: 300px;
+    width: 600px;
 }
