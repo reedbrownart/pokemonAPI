@@ -21,6 +21,12 @@ form, section, button {
     padding: 10px;
 }
 
+p {
+    background-color: grey;
+    border: 1px black solid;
+    padding: 10px;
+}
+
 .container {
     border: 1px black solid;
     display: flex;
